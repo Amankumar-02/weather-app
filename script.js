@@ -1,8 +1,3 @@
-// key == f91d8aa239caa76722ca60e28e0a93d7
-// API == 
-//https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=f91d8aa239caa76722ca60e28e0a93d7&units=metric
-
-
 let btn = document.querySelector(".searchBox button");
 let weatherIcon = document.querySelector(".weatherIcon");
 // logic
@@ -46,9 +41,9 @@ async function checkWeather(apiURL) {
 }
 // event handler
 btn.addEventListener("click", () => {
-    const apiKey = 'f91d8aa239caa76722ca60e28e0a93d7';
+    const apiC = 'f91d8aa239caa76722ca60e28e0a93d7';
     let input = document.querySelector(".searchBox input[type='text']");
-    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiKey}&units=metric`;
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${apiC}&units=metric`;
     if (!input.value) {
         alert("Please Input the City")
     } else {
